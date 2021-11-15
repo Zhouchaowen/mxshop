@@ -1,0 +1,24 @@
+{
+   "name": "user-web",
+   "port": 8021,
+   "user_srv": {
+      "host": "127.0.0.1",
+      "port": 50051,
+      "name": "user-srv"
+   },
+   "jwt": {
+      "key": "asdasdqrrq@432"
+   },
+   "sms": {
+      "key": "",
+      "secret": ""
+   },
+   "redis": {
+      "host": "127.0.0.1",
+      "port": 6379
+   },
+   "consul": {
+      "host": "148.70.50.244",
+      "port": 8500
+   }
+}

@@ -1,0 +1,14 @@
+{
+   "name": "user-srv",
+   "mysql": {
+      "host": "148.70.50.244",
+      "port": 3306,
+      "user": "root",
+      "password": "Qwe,123",
+      "db": "mxshop_user_srv"
+   },
+   "consul": {
+      "host": "148.70.50.244",
+      "port": 8500
+   }
+}

@@ -1,0 +1,24 @@
+2021-11-11T22:04:08.677+0800	[31mERROR[0m	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.json","group":"dev"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2021-11-11T22:04:08.693+0800	[31mERROR[0m	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.json","group":"dev"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2021-11-11T22:04:08.702+0800	[31mERROR[0m	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.json","group":"dev"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2021-11-11T22:04:08.702+0800	[34mINFO[0m	get config from server error:[404] config data not exist
+ 
+2021-11-11T22:04:08.705+0800	[33mWARN[0m	[client.GetConfig] config not found, dataId: user-web.json, group: dev, namespaceId: .
+2021-11-11T22:05:51.929+0800	[31mERROR[0m	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.json","group":"dev"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2021-11-11T22:05:52.036+0800	[31mERROR[0m	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.json","group":"dev"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2021-11-11T22:05:52.046+0800	[31mERROR[0m	api</v1/cs/configs>,method:<GET>, params:<{"dataId":"user-web.json","group":"dev"}>, call domain error:<[404] config data not exist
+> , result:<config data not exist
+>
+2021-11-11T22:05:52.046+0800	[34mINFO[0m	get config from server error:[404] config data not exist
+ 
+2021-11-11T22:05:52.047+0800	[33mWARN[0m	[client.GetConfig] config not found, dataId: user-web.json, group: dev, namespaceId: .
