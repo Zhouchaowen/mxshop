@@ -40,6 +40,6 @@ func InitDB() {
 		panic(err)
 	}
 
-	_ = global.DB.AutoMigrate(&model.Category{},&model.Brands{},
-		&model.GoodsCategoryBrand{},&model.Brands{},&model.Goods{})
+	_ = global.DB.AutoMigrate(&model.Category{}, &model.Brands{},
+		&model.GoodsCategoryBrand{}, &model.Brands{}, &model.Goods{})
 }

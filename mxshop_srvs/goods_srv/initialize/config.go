@@ -18,7 +18,7 @@ func GetEnvInfo(env string) bool {
 	//刚才设置的环境变量 想要生效 我们必须得重启goland
 }
 
-func InitConfig2() {
+func InitConfig() {
 	debug := GetEnvInfo("MXSHOP_DEBUG")
 	configFilePrefix := "config"
 	configFileName := fmt.Sprintf("goods_srv/%s-pro.yaml", configFilePrefix)
@@ -82,7 +82,7 @@ func InitConfig2() {
 	fmt.Println(&global.ServerConfig)
 }
 
-func InitConfig() {
+func InitConfig2() {
 	//从配置文件中读取出对应的配置
 	debug := GetEnvInfo("MXSHOP_DEBUG")
 	configFilePrefix := "config"

@@ -1,7 +1,8 @@
 host: '1.14.105.109'
+tags: ["imooc", "bobby", "user", "srv"]
 port: 8848
-namespace: 'c31a770d-dc94-4d55-905a-9d26b5a72402'
+namespace: 'e949a60d-1266-4663-9b53-9ca370d18fbd'
 user: 'nacos'
 password: 'nacos'
-dataid: 'user-grpc.json'
+dataid: 'goods-grpc.json'
 group: 'dev'
