@@ -1,0 +1,7 @@
+host: '1.14.105.109'
+port: 8848
+namespace: 'e949a60d-1266-4663-9b53-9ca370d18fbd'
+user: 'nacos'
+password: 'nacos'
+dataid: 'goods-web.json'
+group: 'dev'
