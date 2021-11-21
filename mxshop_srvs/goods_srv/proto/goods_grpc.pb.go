@@ -942,5 +942,5 @@ var Goods_ServiceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "goods.proto",
+	Metadata: "inventory.proto",
 }

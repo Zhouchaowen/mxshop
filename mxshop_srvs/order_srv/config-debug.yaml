@@ -1,0 +1,8 @@
+host: '1.14.105.109'
+tags: ["imooc", "bobby", "order", "srv"]
+port: 8848
+namespace: '0efc9199-6099-4954-ae64-1fc83e61f0f2'
+user: 'nacos'
+password: 'nacos'
+dataid: 'order-grpc.json'
+group: 'dev'

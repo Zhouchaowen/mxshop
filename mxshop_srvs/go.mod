@@ -4,6 +4,8 @@ go 1.17
 
 require (
 	github.com/anaskhan96/go-password-encoder v0.0.0-20201010210601-c765b799fd72
+	github.com/go-redis/redis/v8 v8.11.4
+	github.com/go-redsync/redsync/v4 v4.4.2
 	github.com/golang/protobuf v1.5.2
 	github.com/hashicorp/consul/api v1.10.1
 	github.com/hashicorp/go-uuid v1.0.1

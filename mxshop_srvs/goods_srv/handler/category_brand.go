@@ -74,26 +74,26 @@ func (s *GoodsServer) GetCategoryBrandList(ctx context.Context, req *proto.Categ
 
 func (s *GoodsServer) CreateCategoryBrand(ctx context.Context, req *proto.CategoryBrandRequest) (*proto.CategoryBrandResponse, error) {
 	var category model.Category
-	if result := global.DB.First(&category,req.CategoryId);result.RowsAffected == 0{
-		return nil, status.Errorf(codes.InvalidArgument,"商品分类不存在")
+	if result := global.DB.First(&category, req.CategoryId); result.RowsAffected == 0 {
+		return nil, status.Errorf(codes.InvalidArgument, "商品分类不存在")
 	}
 
 	var brand model.Brands
-	if result := global.DB.First(&brand,req.BrandId);result.RowsAffected == 0{
-		return nil, status.Errorf(codes.InvalidArgument,"品牌不存在")
+	if result := global.DB.First(&brand, req.BrandId); result.RowsAffected == 0 {
+		return nil, status.Errorf(codes.InvalidArgument, "品牌不存在")
 	}
 
 	categoryBrand := model.GoodsCategoryBrand{
 		CategoryId: req.CategoryId,
-		BrandsId: req.BrandId,
+		BrandsId:   req.BrandId,
 	}
 	global.DB.Save(&categoryBrand)
 	return &proto.CategoryBrandResponse{Id: categoryBrand.ID}, nil
 }
 
 func (s *GoodsServer) DeleteCategoryBrand(ctx context.Context, req *proto.CategoryBrandRequest) (*emptypb.Empty, error) {
-	if result := global.DB.Delete(&model.GoodsCategoryBrand{},req.Id);result.RowsAffected == 0{
-		return nil, status.Errorf(codes.InvalidArgument,"品牌分类不存在")
+	if result := global.DB.Delete(&model.GoodsCategoryBrand{}, req.Id); result.RowsAffected == 0 {
+		return nil, status.Errorf(codes.InvalidArgument, "品牌分类不存在")
 	}
 
 	return &emptypb.Empty{}, nil
@@ -101,18 +101,18 @@ func (s *GoodsServer) DeleteCategoryBrand(ctx context.Context, req *proto.Catego
 
 func (s *GoodsServer) UpdateCategoryBrand(ctx context.Context, req *proto.CategoryBrandRequest) (*emptypb.Empty, error) {
 	var categoryBrand model.GoodsCategoryBrand
-	if result := global.DB.First(&categoryBrand,req.Id);result.RowsAffected == 0{
-		return nil, status.Errorf(codes.InvalidArgument,"品牌分类不存在")
+	if result := global.DB.First(&categoryBrand, req.Id); result.RowsAffected == 0 {
+		return nil, status.Errorf(codes.InvalidArgument, "品牌分类不存在")
 	}
 
 	var category model.Category
-	if result := global.DB.First(&category,req.CategoryId);result.RowsAffected == 0{
-		return nil, status.Errorf(codes.InvalidArgument,"商品分类不存在")
+	if result := global.DB.First(&category, req.CategoryId); result.RowsAffected == 0 {
+		return nil, status.Errorf(codes.InvalidArgument, "商品分类不存在")
 	}
 
 	var brand model.Brands
-	if result := global.DB.First(&brand,req.BrandId);result.RowsAffected == 0{
-		return nil, status.Errorf(codes.InvalidArgument,"品牌不存在")
+	if result := global.DB.First(&brand, req.BrandId); result.RowsAffected == 0 {
+		return nil, status.Errorf(codes.InvalidArgument, "品牌不存在")
 	}
 
 	categoryBrand.CategoryId = req.CategoryId

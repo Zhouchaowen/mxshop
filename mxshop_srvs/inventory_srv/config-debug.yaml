@@ -1,0 +1,8 @@
+host: '1.14.105.109'
+tags: ["imooc", "bobby", "inventory", "srv"]
+port: 8848
+namespace: 'fea7df96-0e92-4b5b-a02b-44ea55cec4f4'
+user: 'nacos'
+password: 'nacos'
+dataid: 'inventory-grpc.json'
+group: 'dev'
